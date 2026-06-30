@@ -1,0 +1,54 @@
+Computing 0x1/0x1...
+ram:00038b18 (lsr_s r2,r0,1                 ) r0=0x00000001 r1=0x00000001 r2=0x00000000 r3=0x00000000 r4=0x00000000
+ram:00038b1a (brhs.d r1,r2,0x00038b6c [with delay slot: _norm r2,r2]) r0=0x00000001 r1=0x00000001 r2=0x00000000 r3=0x00000000 r4=0x00000000
+ram:00038b6c (mov_s r4,r1                   ) r0=0x00000001 r1=0x00000001 r2=0x0000001f r3=0x00000000 r4=0x00000000
+ram:00038b6e (sub.f r1,r0,r1                ) r0=0x00000001 r1=0x00000001 r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b72 (sbc r0,r0,r0                  ) r0=0x00000001 r1=0x00000000 r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b76 (sub.cc.f r1,r1,r4             ) r0=0x00000000 r1=0x00000000 r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b7a (sbc r0,r0,0x0                 ) r0=0x00000000 r1=0xffffffff r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b7e (sub.cc.f r1,r1,r4             ) r0=0xffffffff r1=0xffffffff r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b82 (sbc r0,r0,-0x3                ) r0=0xffffffff r1=0xffffffff r2=0x0000001f r3=0x00000000 r4=0x00000001
+ram:00038b86 (j_s.d blink [with delay slot: _add.cs r1,r1,r4]) r0=0x00000001 r1=0xffffffff r2=0x0000001f r3=0x00000000 r4=0x00000001
+Emulation complete, result is 1
+Computing 0x1010101/0x1010101...
+ram:00038b18 (lsr_s r2,r0,1                 ) r0=0x01010101 r1=0x01010101 r2=0x00000000 r3=0x00000000 r4=0x00000000
+ram:00038b1a (brhs.d r1,r2,0x00038b6c [with delay slot: _norm r2,r2]) r0=0x01010101 r1=0x01010101 r2=0x00808080 r3=0x00000000 r4=0x00000000
+ram:00038b6c (mov_s r4,r1                   ) r0=0x01010101 r1=0x01010101 r2=0x00000007 r3=0x00000000 r4=0x00000000
+ram:00038b6e (sub.f r1,r0,r1                ) r0=0x01010101 r1=0x01010101 r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b72 (sbc r0,r0,r0                  ) r0=0x01010101 r1=0x00000000 r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b76 (sub.cc.f r1,r1,r4             ) r0=0x00000000 r1=0x00000000 r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b7a (sbc r0,r0,0x0                 ) r0=0x00000000 r1=0xfefefeff r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b7e (sub.cc.f r1,r1,r4             ) r0=0xffffffff r1=0xfefefeff r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b82 (sbc r0,r0,-0x3                ) r0=0xffffffff r1=0xfefefeff r2=0x00000007 r3=0x00000000 r4=0x01010101
+ram:00038b86 (j_s.d blink [with delay slot: _add.cs r1,r1,r4]) r0=0x00000001 r1=0xfefefeff r2=0x00000007 r3=0x00000000 r4=0x01010101
+Emulation complete, result is 1
+Computing 0xfefefeff/0x1010101...
+ram:00038b18 (lsr_s r2,r0,1                 ) r0=0xfefefeff r1=0x01010101 r2=0x00000000 r3=0x00000000 r4=0x00000000
+ram:00038b1a (brhs.d r1,r2,0x00038b6c [with delay slot: _norm r2,r2]) r0=0xfefefeff r1=0x01010101 r2=0x7f7f7f7f r3=0x00000000 r4=0x00000000
+ram:00038b22 (norm r3,r1                    ) r0=0xfefefeff r1=0x01010101 r2=0x00000000 r3=0x00000000 r4=0x00000000
+ram:00038b26 (sub_s r3,r3,r2                ) r0=0xfefefeff r1=0x01010101 r2=0x00000000 r3=0x00000006 r4=0x00000000
+ram:00038b28 (asl_s r1,r1,r3                ) r0=0xfefefeff r1=0x01010101 r2=0x00000000 r3=0x00000006 r4=0x00000000
+ram:00038b2a (sub1.f 0x0,r0,r1              ) r0=0xfefefeff r1=0x40404040 r2=0x00000000 r3=0x00000006 r4=0x00000000
+ram:00038b2e (lsr.cs r1,r1,0x1              ) r0=0xfefefeff r1=0x40404040 r2=0x00000000 r3=0x00000006 r4=0x00000000
+ram:00038b32 (sbc r2,r3,0x0                 ) r0=0xfefefeff r1=0x40404040 r2=0x00000000 r3=0x00000006 r4=0x00000000
+ram:00038b36 (sub1 r0,r0,r1                 ) r0=0xfefefeff r1=0x40404040 r2=0x00000006 r3=0x00000006 r4=0x00000000
+ram:00038b3a (cmp_s r0,r1                   ) r0=0x7e7e7e7f r1=0x40404040 r2=0x00000006 r3=0x00000006 r4=0x00000000
+ram:00038b3c (mov.f lp_count,r2             ) r0=0x7e7e7e7f r1=0x40404040 r2=0x00000006 r3=0x00000006 r4=0x00000000
+ram:00038b40 (sub.cc r0,r0,r1               ) r0=0x7e7e7e7f r1=0x40404040 r2=0x00000006 r3=0x00000006 r4=0x00000000
+ram:00038b44 (mov_s r3,0x3                  ) r0=0x3e3e3e3f r1=0x40404040 r2=0x00000006 r3=0x00000006 r4=0x00000000
+ram:00038b46 (sbc r3,r3,0x0                 ) r0=0x3e3e3e3f r1=0x40404040 r2=0x00000006 r3=0x00000003 r4=0x00000000
+ram:00038b4a (asl_s r3,r3,r2                ) r0=0x3e3e3e3f r1=0x40404040 r2=0x00000006 r3=0x00000003 r4=0x00000000
+ram:00038b4c (rsub r1,r1,0x1                ) r0=0x3e3e3e3f r1=0x40404040 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b50 (lpne 0x00038b5c               ) r0=0x3e3e3e3f r1=0xbfbfbfc1 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b54 (add1.f r0,r1,r0               ) r0=0x3e3e3e3f r1=0xbfbfbfc1 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b58 (sub.cc r0,r0,r1               ) r0=0x3c3c3c3f r1=0xbfbfbfc1 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b5c (lsr r1,r0,r2                  ) r0=0x3c3c3c3f r1=0xbfbfbfc1 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b60 (bmsk r0,r0,r2                 ) r0=0x3c3c3c3f r1=0x00f0f0f0 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b64 (bclr r0,r0,r2                 ) r0=0x0000003f r1=0x00f0f0f0 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+ram:00038b68 (j_s.d blink [with delay slot: _or_s r0,r0,r3]) r0=0x0000003f r1=0x00f0f0f0 r2=0x00000006 r3=0x000000c0 r4=0x00000000
+Emulation complete, result is 255
+Emulation produced unexpected output: 255 != 254
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "<console>", line 4, in test_udivmodsi4
+AssertionError
